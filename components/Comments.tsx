@@ -22,10 +22,10 @@ const Comments: React.FunctionComponent<CommentsProps> = ({ topic }) => {
         </Center>
       )}
       <Stack spacing={4}>
+        {query.isFetched && <CommentEditor topic={topic} />}
         {query.data?.map((comment) => (
           <Comment key={comment.id} comment={comment} />
         ))}
-        {query.isFetched && <CommentEditor topic={topic} />}
       </Stack>
     </Box>
   );
