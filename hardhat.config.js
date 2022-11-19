@@ -22,5 +22,9 @@ module.exports = {
     hardhat: {
       chainId: 1337,
     },
+    matic: {
+      url: "https://rpc-mumbai.maticvigil.com",
+      accounts: ["0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"],
+    },
   },
 };
